@@ -125,8 +125,7 @@
     <div class="menu-bar">☰</div>
   </header>
 
-<div class="carousel-container">
- <amp-carousel width="400" height="300" layout="responsive" type="slides">
+<amp-carousel id="carousel" width="400" height="300" layout="responsive" type="slides" on="slideChange:AMP.setState({currentSlide: event.index})">
   <amp-img src="images/image1.png" width="400" height="300" layout="responsive" alt="Image 1"></amp-img>
   <amp-img src="images/image2.png" width="400" height="300" layout="responsive" alt="Image 2"></amp-img>
   <amp-video width="400" height="300" layout="responsive" loop>
@@ -134,13 +133,12 @@
   </amp-video>
 </amp-carousel>
 
-  <div class="carousel-indicators">
-    <span class="active"></span>
-    <span></span>
-    <span></span>
-  </div>
+<!-- Carousel Indicators -->
+<div class="carousel-indicators">
+  <span [class]="currentSlide == 0 ? 'active' : ''"></span>
+  <span [class]="currentSlide == 1 ? 'active' : ''"></span>
+  <span [class]="currentSlide == 2 ? 'active' : ''"></span>
 </div>
-
 
   <div class="section-heading">Not A Celebrity Tequila</div>
   <div class="sub-heading">Tequila Blanco</div>
