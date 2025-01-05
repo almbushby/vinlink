@@ -1,8 +1,8 @@
 /* Define the Brittany Signature font */
 @font-face {
   font-family: 'Brittany Signature';
-  src: url('../fonts/BrittanySignature.woff2') format('woff2'),
-       url('../fonts/BrittanySignature.woff') format('woff');
+  src: url('https://almbushby.github.io/vinlink//fonts/BrittanySignature.woff2') format('woff2'),
+       url('https://almbushby.github.io/vinlink//fonts/BrittanySignature.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
