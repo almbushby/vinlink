@@ -148,13 +148,7 @@
     <source src="videos/video.mp4" type="video/mp4">
   </amp-video>
 </amp-carousel>
-
-<!-- Carousel Indicators -->
-<div class="carousel-indicators">
-  <span [class]="currentSlide == 0 ? 'active' : ''"></span>
-  <span [class]="currentSlide == 1 ? 'active' : ''"></span>
-  <span [class]="currentSlide == 2 ? 'active' : ''"></span>
-</div>
+<div [text]="'Current slide index: ' + currentSlide"></div>
 
 
   <div class="section-heading">Not A Celebrity Tequila</div>
