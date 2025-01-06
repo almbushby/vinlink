@@ -135,10 +135,16 @@
   </script>
 </amp-state>
   
-<amp-carousel id="carousel" width="400" height="300" layout="responsive" type="slides" on="slideChange:AMP.setState({currentSlide: event.index})">
+<amp-carousel 
+  id="carousel" 
+  width="400" 
+  height="300" 
+  layout="responsive" 
+  type="slides" 
+  on="slideChange:AMP.setState({currentSlide: event.index})">
   <amp-img src="images/image1.jpg" width="400" height="300" layout="responsive" alt="Image 1"></amp-img>
-  <amp-img src="images/image2.jpg" width="400" height="300" layout="responsive" alt="Image 2"></amp-img>
-  <amp-video width="400" height="300" layout="responsive" autoplay loop>
+  <amp-img src="images/image2.png" width="400" height="300" layout="responsive" alt="Image 2"></amp-img>
+  <amp-video width="400" height="300" layout="responsive" loop>
     <source src="videos/video.mp4" type="video/mp4">
   </amp-video>
 </amp-carousel>
@@ -149,6 +155,7 @@
   <span [class]="currentSlide == 1 ? 'active' : ''"></span>
   <span [class]="currentSlide == 2 ? 'active' : ''"></span>
 </div>
+
 
   <div class="section-heading">Not A Celebrity Tequila</div>
   <div class="sub-heading">Tequila Blanco</div>
